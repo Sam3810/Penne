@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('./font/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('./font/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mona-Sans";
+}
+
+a {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+}
+
+a:hover {
+    transition-duration: 0.3s;
+    opacity: 0.8;
+}
+
+header {
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgb(102, 102, 102);
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+ul > a {
+    padding: 0 10px 0 10px;
+}
+
+.portada {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/img/pngtree-black-plate-filled-with-noodles-picture-image_2655003-transformed\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portada > h1 {
+    padding: 15px;
+}
+
+.somos {
+    text-align: center;
+    padding: 20px;
+    padding-top: 35px;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.somos > p {
+    font-size: 17px;
+}
+
+.somos > h1 {
+    padding: 30px;
+    font-size: 25px;
+}
+
+.numeros {
+    padding: 80px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.div-numeros {
+    max-width: 250px;
+    text-align: center;
+}
+
+.div-numeros > img {
+    min-width: 50px;
+}
