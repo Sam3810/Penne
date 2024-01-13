@@ -1,25 +1,30 @@
 @font-face {
-    font-family: 'Mona Sans';
+    font-family: 'DM-Sans-BL';
     src:
-      url('./font/Mona-Sans.woff2') format('woff2 supports variations'),
-      url('./font/Mona-Sans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
+      url('/Penne/Fonts/DMSans_18pt-Black.ttf')
+}
+
+@font-face {
+    font-family: 'DM-Sans-BO';
+    src:
+      url('/Penne/Fonts/DMSans_18pt-Bold.ttf')
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Mona-Sans";
+    font-family: "DM-Sans-BL";
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
     color: rgb(31, 31, 31);
+    font-family: "DM-Sans-BO";
+    transition-duration: 0.3s;
 }
 
 a:hover {
-    transition-duration: 0.3s;
     opacity: 0.8;
 }
 
@@ -41,7 +46,7 @@ header section {
 }
 
 ul > a {
-    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
 }
 
 .portada {
@@ -57,6 +62,25 @@ ul > a {
 
 .portada > h1 {
     padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.portada > p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+.portada > img {
+    min-width: 50px;
+    position: absolute;
+    top: 90%;
+    transition-duration: 0.3s;
+}
+
+.portada > img:hover {
+    transform: scale(0.9);
 }
 
 .somos {
@@ -91,8 +115,44 @@ ul > a {
 .div-numeros {
     max-width: 250px;
     text-align: center;
+    margin: 0 20px 0 20px;
 }
 
 .div-numeros > img {
     min-width: 50px;
+    transition-duration: 0.3s;
+}
+
+.div-numeros > img:hover {
+    transform: scale(0.9);
+}
+
+.img-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 800px;
+    max-height: 100px;
+    text-align: center;
+    margin: 30px auto 30px auto;
+}
+
+.img-contenedor > a {
+    font-size: 35px;
+    position: absolute;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+.img-contenedor > a:hover {
+    opacity: 0.8;
+}
+
+.img-contenedor > img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    filter: blur(1.5px) brightness(60%);
+    border-radius: 3px;
 }
