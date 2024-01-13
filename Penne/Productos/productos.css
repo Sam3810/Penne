@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'DM-Sans-BL';
+    src:
+      url('/Penne/Fonts/DMSans_18pt-Black.ttf')
+}
+
+@font-face {
+    font-family: 'DM-Sans-BO';
+    src:
+      url('/Penne/Fonts/DMSans_18pt-Bold.ttf')
+}
+
+html, body {
+    height: 100dvh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM-Sans-BL";
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    font-family: "DM-Sans-BO";
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+header {
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgb(102, 102, 102);
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+ul > a {
+    margin: 0 10px 0 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(26, 26, 26);
+    max-width: 240px;
+    min-height: 240px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.product > p {
+    font-size: 17px;
+    padding: 3px 0 3px 0;
+    border-bottom: 1px solid black;
+}
+
+.product > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product:hover {
+    box-shadow: 3px 3px 0px black;
+    cursor: pointer;
+}
+
+footer {
+    position: sticky;
+    top: 100%;
+    border-top: 1px solid rgb(29, 29, 29);
+    padding: 30px;
+    text-align: center;
+}
