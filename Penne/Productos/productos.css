@@ -55,7 +55,7 @@ ul > a {
 
 h1 {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 90px;
 }
 
 .products {
@@ -65,7 +65,7 @@ h1 {
     flex-wrap: wrap;
     max-width: 800px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 65px;
 }
 
 .product {
