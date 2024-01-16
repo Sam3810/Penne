@@ -28,6 +28,10 @@ a {
     transition-duration: 0.3s;
 }
 
+p {
+    font-family: "DM-Sans-BO";
+}
+
 a:hover {
     opacity: 0.8;
 }
@@ -139,7 +143,7 @@ ul > a {
     max-width: 800px;
     max-height: 100px;
     text-align: center;
-    margin: 30px auto 30px auto;
+    margin: 80px auto 80px auto;
 }
 
 .img-contenedor > a {
@@ -155,10 +159,60 @@ ul > a {
 
 .img-contenedor > img {
     width: 100%;
-    max-height: 200px;
+    max-height: 250px;
     object-fit: cover;
     filter: blur(1.5px) brightness(60%);
     border-radius: 3px;
+}
+
+.opiniones {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    gap: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.opiniones > h2 {
+    margin-bottom: 30px;
+}
+
+.opinion {
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition-duration: 0.3s;
+}
+
+.opinion:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+.img-user > img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.estrellas {
+    display: flex;
+}
+
+.estrellas > img {
+    max-width: 30px;
+    margin-top: 10px;
 }
 
 footer {
